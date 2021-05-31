@@ -15,24 +15,24 @@ export const Home: React.FC = () => {
                     so i made this to make it bareable ¯\_(ツ)_/¯
                 </p>
                 <div className="Emotes">
-                    <img src={PepeCool} className="Emote" />
-                    <img src={PepeCool} className="Emote" />
-                    <img src={PepeCool} className="Emote" />
-                    <img src={PepeCool} className="Emote" />
+                    <img src={PepeCool} className="Emote" alt="" />
+                    <img src={PepeCool} className="Emote" alt="" />
+                    <img src={PepeCool} className="Emote" alt="" />
+                    <img src={PepeCool} className="Emote" alt="" />
                 </div>
             </div>
             <div>
-                <img src={PepeDance} className="Dance" />
+                <img src={PepeDance} className="Dance" alt="" />
             </div>
             <div className="Britain">
                 <h2>Made In Bri'an</h2>
                 <div className="BritianImages">
-                    <img className="Bruv" src={Brtain} />
-                    <img className="Flag" src={Englund} />
+                    <img className="Bruv" src={Brtain} alt="" />
+                    <img className="Flag" src={Englund} alt="" />
                 </div>
             </div>
             <div className="Arrive">
-                <img src={arrive} />
+                <img src={arrive} alt="" />
             </div>
             <div className="Useful">
                 <h2>Will This Be Useful?</h2>

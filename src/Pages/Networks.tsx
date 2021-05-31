@@ -11,16 +11,16 @@ export const Networks: React.FC = () => {
         <div className="Networks">
             <div className="TitleBox">
                 <div>
-                    <img src={hacker} />
+                    <img src={hacker} alt="" />
                 </div>
                 <h1>Networks</h1>
                 <div>
-                    <img src={lag} />
+                    <img src={lag} alt="" />
                 </div>
             </div>
             <SubHeader main="Characteristics" rest="of a Network" />
             <div className="NetworkDef">
-                <img src={pepog} />
+                <img src={pepog} alt="" />
                 <h3 className="Cringe Learn">LEARN</h3>
                 <p>
                     A <b>network</b> is the name given to <b>two or more</b> computers connected together with the ability to  
@@ -52,14 +52,14 @@ export const Networks: React.FC = () => {
                         </p>
                     </div>
                     <div className=".Img">
-                        <img src={bus} />
+                        <img src={bus} alt="" />
                     </div>
                 </div>
             </div>
             <div className="CardAndText">
                 <div className="CardAndText-Wrapper">
                     <div className=".Img">
-                        <img src={star} />
+                        <img src={star} alt="" />
                     </div>
                     <div className=".Text">
                         <p>
@@ -73,7 +73,7 @@ export const Networks: React.FC = () => {
                 </div>
             </div>
             <div className="NetworkDef">
-                <img src={pepog} />
+                <img src={pepog} alt="" />
                 <h3 className="Cringe Learn">LEARN</h3>
                 <p>
                     A <b>protocol</b> is a set of rules defining how two computers <b>communicate</b> with each other.

@@ -13,13 +13,13 @@ export const Computing: React.FC<Props> = () => {
     return(
         <div className="Computing">
             <div className="TopRow">
-                <img src={PepeJam} className="PepeJam" />
+                <img src={PepeJam} className="PepeJam" alt="" />
                 <div className="Welcome">
                     <h1><u>Welcome <span className="ChadCA">C</span><span className="ChadHD">H</span><span className="ChadCA">A</span><span className="ChadHD">D</span> <span>GAMERS</span></u></h1>
                     <h2><span className="Small">Big</span> <span className="ComputingTxt">Computing</span> Revision Is Here</h2>
                 </div>
                 <div className="PepeSmart-Wrapper">
-                    <img src={PepeSmart} className="PepeSmart" />
+                    <img src={PepeSmart} className="PepeSmart" alt="" />
                 </div>
             </div>
             <div className="SubjectLinks">

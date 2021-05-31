@@ -10,7 +10,7 @@ export const SubHeader: React.FC<Props> = ({main, rest}) => {
         <h2 className="SubHeader">
             {
                 main.split("").map((char, idx) => {
-                    if (idx % 2 == 0) return <span className="Increase">{char}</span>
+                    if (idx % 2 === 0) return <span className="Increase">{char}</span>
                     return <span className="Increase delayHALF">{char}</span>
                 })
             }

@@ -15,11 +15,11 @@ export const CPU: React.FC = () => {
         <div className="CPU">
             <div className="TitleBox">
                 <div>
-                    <img src={jamjam} />
+                    <img src={jamjam} alt="" />
                 </div>
                 <h1>Processor Architecture</h1>
                 <div>
-                    <img src={clap} />
+                    <img src={clap} alt="" />
                 </div>
             </div>
             <SubHeader main="Components" rest=" Of A Processor" />
@@ -184,7 +184,7 @@ export const CPU: React.FC = () => {
                     <ul>
                         <li>- The decoded instruction is executed</li>
                         <li>
-                            <img src={smort} />
+                            <img src={smort} alt="" />
                         </li>
                     </ul>
                 </div>
@@ -197,7 +197,7 @@ export const CPU: React.FC = () => {
                         All processor activites begin on a clock pulse, and each CPU operation starts as the clock changes from 0 to 1. The
                         clock speed is the time taken for one clock cycle to complete.
                     </p>
-                    <img src={steer} />
+                    <img src={steer} alt="" />
                 </div>
                 <div>
                     <h3>Number Of Cores</h3>
@@ -206,7 +206,7 @@ export const CPU: React.FC = () => {
                         complete mutliple istructions at any given time. However not all programs are designed to use multiple cores so dont 
                         do so efficently.
                     </p>
-                    <img src={lag} />
+                    <img src={lag} alt="" />
                 </div>
                 <div>
                     <h3>Amount and Type of Cache</h3>
@@ -215,7 +215,7 @@ export const CPU: React.FC = () => {
                         can be accessed quicker. As cache fills up, unused instructions are replaced. Goes from lvl 1-3 with 1 being the 
                         fastest and 3 the slowest.
                     </p>
-                    <img src={blobdance} />
+                    <img src={blobdance} alt="" />
                 </div>
             </div>
             <h2>Computer Architecture</h2>
@@ -254,10 +254,10 @@ export const CPU: React.FC = () => {
                 </table>
             </div>
             <div className="vs">
-                <img src={vs} />
+                <img src={vs} alt="" />
             </div>
             <div className="leave">
-                <img src={leave} />
+                <img src={leave} alt="" />
             </div>
         </div>
     )
