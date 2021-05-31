@@ -1,38 +1,614 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: ComicSans;
+  src: url("./COMIC.TTF");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.TopBar {
+  display: flex;
+  justify-content: center;
+  height: 12.5rem;
+}
+
+.ExpandingText {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: Expand;
+}
+
+.ExpandingText2 {
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: Expand;
+}
+
+.ExpandingText3 {
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: Expand;
+}
+
+.QuickFlash {
+  animation-duration: 0.5s;
+  animation-name: Flash;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Expand {
+  0% {
+    font-size: 2rem;
+  }
+  50% {
+    font-size: 9rem;
+  }
+  100% {
+    font-size: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes Flash {
+  0% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes Rotate {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+li {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.CurrentPage {
+  color: grey;
+}
+
+.NavLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 2rem;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.Emote {
+  width: 5rem;
+  animation-duration: 1s;
+  animation-name: Rotate;
+  animation-iteration-count: infinite;
+}
+
+.Emotes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Why {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 0.4rem solid green;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: ComicSans;
+  justify-content: space-between;
+}
+
+.Why h2 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.Cringe {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: SmallExpand;
+}
+
+.Chad {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: SmallExpand;
+  animation-delay: 0.5s;
+}
+
+@keyframes SmallExpand {
+  0% {
+    font-size: 1.5rem;
+  }
+  50% {
+    font-size: 3rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes Shake {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.Shake {
+  animation-duration: 0.5s;
+  animation-name: Shake;
+  animation-iteration-count: infinite;
+}
+
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Dance {
+  width: 30rem;
+  margin: 5rem;
+}
+
+.Useful {
+  width: 40%;
+  font-family: ComicSans;
+  text-align: center;
+}
+
+.Britain {
+  width: 25%;
+  flex-direction: column;
+  color: blue;
+  justify-content: center;
+}
+
+.Britain h2 {
+  margin-top: 0;
+}
+
+.Bruv {
+  width: 10rem;
+}
+
+.Flag {
+  width: 5rem;
+  height: 4rem;
+}
+
+.BritianImages {
+  display: flex;
+  justify-content: center;
+}
+
+.Computing {
+  display: flex;
+  text-align: center;
+  font-family: ComicSans;
+  flex-direction: column;
+}
+
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Welcome h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.Welcome h2 {
+  margin-top: 0;
+}
+
+.ChadCA {
+  animation-name: ColorSwitch;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ChadHD {
+  animation-name: ColorSwitch;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.1s;
+}
+
+@keyframes ColorSwitch {
+  0% {
+    color: black;
+  }
+  50% {
+    color: hotpink;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.Small {
+  font-size: 1rem;
+}
+
+.TopRow {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0rem;
+}
+
+.ComputingTxt {
+  font-size: 3rem;
+  color: aqua;
+}
+
+.SubjectLinks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.SubjectTopic button {
+  font-size: 2rem;
+  font-family: ComicSans;
+  border: 0.15rem solid green;
+  background: transparent;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.SubjectTopic button:hover {
+  color: cyan;
+  border: 1rem solid cyan;
+  background-color: palevioletred;
+}
+
+.PepeJam {
+  width: 20rem;
+}
+
+.PepeSmart-Wrapper {
+  width: 20rem;
+}
+
+.PepeSmart {
+  width: 9rem;
+  height: 9rem;
+}
+
+.CPU {
+  font-family: ComicSans;
+}
+
+.CPU h2 {
+  font-size: 3rem;
+}
+
+.SubHeader {
+  font-size: 3rem;
+  height: 7rem;
+}
+
+.Mods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.DropDown-Header h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.DropDown-Div p b {
+  color: red;
+  font-size: 1.75rem;
+}
+
+.DropDown {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.DropDown-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 30%;
+  padding-right: 2rem;
+  border-radius: 1rem;
+  background: transparent;
+  color: cyan;
+  border: 0.2rem solid palevioletred;
+}
+
+.Increase {
+  animation-iteration-count: infinite;
+  animation-duration: 0.75s;
+  animation-name: IncreaseTextSize;
+  animation-timing-function: linear;
+  color: palevioletred;
+}
+
+.delayHALF {
+  animation-delay: 0.375s;
+}
+
+@keyframes IncreaseTextSize {
+  0% {
+    font-size: 3rem;
+  }
+  50% {
+    font-size: 5rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+
+.AssemblyTitle {
+  font-family: 'Special Elite', cursive;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.AssemblyInstructions {
+  display: flex;
+  justify-content: center; 
+}
+
+.AssemblyP {
+  width: 50%;
+  text-align: center;
+}
+
+.AssemblyP b {
+  color: red;
+  font-size: 1.75rem;
+}
+
+.Assembly {
+  display: flex;
+  justify-content: center;
+}
+
+.Fetch {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Fetch div {
+  border: 2px solid green;
+  flex: 1;
+  padding: 2rem;
+  margin: 3rem;
+  border-radius: 5rem;
+}
+
+.Factors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Factors h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+b {
+  color: red;
+  font-size: 1.75rem;
+}
+
+.Factors div {
+  border: 2px solid green;
+  flex: 1;
+  padding: 2rem;
+  margin: 3rem;
+  border-radius: 5rem;
+}
+
+.Arch {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Arch div {
+  flex: 1;
+  margin: 0% 5%;
+}
+
+.Arch div h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: palevioletred;
+}
+
+.ArchTable {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ArchTable table {
+  font-size: 1.25rem;
+  border-spacing: 2rem 0;
+}
+
+.vs {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.leave {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.Leave img {
+  width: 20rem;
+}
+
+.CPU h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.DropDown-Header h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+
+.TitleBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  border-bottom: 2px solid palevioletred;
+  border-top: 2px solid palevioletred;
+}
+
+.TitleBox div img {
+  width: 10rem;
+}
+
+/* ------------------------------ NETWORKS ------------------------------ */ 
+
+.Networks {
+  font-family: ComicSans;
+}
+
+.Networks h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.Networks h2 {
+  font-size: 3rem;
+}
+
+.Networks h3 {
+  font-size: 2rem;
+}
+
+.NetworkDef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 1rem 10rem;
+  padding: 2rem;
+  border: 2px solid green;
+  border-radius: 1rem;
+}
+
+.NetworkDef p {
+  font-size: 2rem;
+  width: 75%;
+}
+
+.Learn {
+  height: 3rem;
+  margin: 0;
+}
+
+.LanAndWan {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.LanAndWan div {
+  flex: 1;
+}
+
+.CardAndText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardAndText-Wrapper {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Text {
+  flex: 2;
+}
+
+.Text p {
+  margin: 0;
+}
+
+.Img {
+  flex: 1;
+}
+
+.Img img {
+  margin: 1rem;
+}
+
+.TCPIP {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
 }
